@@ -1,19 +1,239 @@
-<article class="day-card">
-  <h3>Monday</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to Machine Learning and Data Analysis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fb;
+      color: #222;
+    }
 
-  <div class="session">
-    <h4>Morning: Course Introduction and Data Visualization</h4>
-    <ul>
-      <li><a href="#">Lecture slides</a></li>
-      <li><a href="#">Exercise / lab</a></li>
-    </ul>
-  </div>
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
 
-  <div class="session">
-    <h4>Afternoon: </h4>
-    <ul>
-      <li><a href="#">Lecture slides</a></li>
-      <li><a href="#">Exercise / lab</a></li>
-    </ul>
+    .hero {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    h4 {
+      margin-bottom: 8px;
+      margin-top: 18px;
+      color: #1a5fd0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .day-card, .info-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .session {
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .session:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    a {
+      color: #1a5fd0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 6px;
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <section class="hero">
+      <h1>Introduction to Machine Learning and Data Analysis</h1>
+      <p>
+        Welcome to the website for this one-week Summer School course.
+      </p>
+      <p>
+        In this course, participants work with real datasets and follow a complete research workflow:
+        from data preprocessing to supervised and unsupervised learning, model validation, handling
+        missing data, and presenting results in a transparent and reproducible way.
+      </p>
+      <p>
+        The course is designed to make machine learning a practical tool for research, using clear,
+        applied examples and a strong focus on interpretable methods.
+      </p>
+      <p>
+        Here you can find the daily materials from Monday to Friday.
+      </p>
+    </section>
+
+    <section>
+      <h2>Schedule</h2>
+      <div class="grid">
+
+        <article class="day-card">
+          <h3>Monday</h3>
+
+          <div class="session">
+            <h4>Morning: Course Introduction and Data Visualization</h4>
+            <ul>
+              <li><a href="#">Lecture slides</a></li>
+              <li><a href="#">Exercise / lab</a></li>
+            </ul>
+          </div>
+
+          <div class="session">
+            <h4>Afternoon:</h4>
+            <ul>
+              <li><a href="#">Lecture slides</a></li>
+              <li><a href="#">Exercise / lab</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <h3>Tuesday</h3>
+
+          <div class="session">
+            <h4>Morning: Topic 2</h4>
+            <ul>
+              <li><a href="#">Lecture slides</a></li>
+              <li><a href="#">Exercise / lab</a></li>
+            </ul>
+          </div>
+
+          <div class="session">
+            <h4>Afternoon:</h4>
+            <ul>
+              <li><a href="#">Lecture slides</a></li>
+              <li><a href="#">Exercise / lab</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <h3>Wednesday</h3>
+
+          <div class="session">
+            <h4>Morning: Topic 3</h4>
+            <ul>
+              <li><a href="#">Lecture slides</a></li>
+              <li><a href="#">Exercise / lab</a></li>
+            </ul>
+          </div>
+
+          <div class="session">
+            <h4>Afternoon:</h4>
+            <ul>
+              <li><a href="#">Lecture slides</a></li>
+              <li><a href="#">Exercise / lab</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <h3>Thursday</h3>
+
+          <div class="session">
+            <h4>Morning: Topic 4</h4>
+            <ul>
+              <li><a href="#">Lecture slides</a></li>
+              <li><a href="#">Exercise / lab</a></li>
+            </ul>
+          </div>
+
+          <div class="session">
+            <h4>Afternoon:</h4>
+            <ul>
+              <li><a href="#">Lecture slides</a></li>
+              <li><a href="#">Exercise / lab</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="day-card">
+          <h3>Friday</h3>
+
+          <div class="session">
+            <h4>Morning: Wrap-up</h4>
+            <ul>
+              <li><a href="#">Lecture slides</a></li>
+              <li><a href="#">Exercise / lab</a></li>
+            </ul>
+          </div>
+
+          <div class="session">
+            <h4>Afternoon:</h4>
+            <ul>
+              <li><a href="#">Lecture slides</a></li>
+              <li><a href="#">Exercise / lab</a></li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Practical Information</h2>
+      <div class="info-card">
+        <ul>
+          <li>Coordinator: Mahdi Shafiee Kamalabad</li>
+          <li>Teachers: Mahdi Shafiee Kamalabad and Thom Volker</li>
+          <li>Location: Utrecht University</li>
+          <li>Dates: 20–24 July 2026</li>
+          <li>Contact: m.shafieekamalabad@uu.nl</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      Built with a simple index.html file on GitHub Pages.
+    </footer>
+
   </div>
-</article>
+</body>
+</html>
