@@ -240,9 +240,12 @@
     </p>
     <p>You can install them with the following code:</p>
 
-    <pre><code>install.packages(c("tidyverse", "knitr", "rmarkdown", "patchwork", "palmerpenguins", "caret", "ISLR", "splines", "glmnet", 
-      "randomForest", "xgboost", "e1071", "kernlab", "pROC", "psych", "tidytext", "factoextra", "neuralnet"
-))</code></pre>
+    <pre><code>pkgs <- c("tidyverse","knitr","rmarkdown","patchwork","palmerpenguins","caret","ISLR",
+          "glmnet","randomForest","xgboost","e1071","kernlab","pROC","psych",
+          "tidytext","factoextra","neuralnet")
+
+to_install <- setdiff(pkgs, rownames(installed.packages()))
+if (length(to_install)) install.packages(to_install, repos = "https://cloud.r-project.org")</code></pre>
 
     <p>
       If you do not have administrator rights and were not able to install the
