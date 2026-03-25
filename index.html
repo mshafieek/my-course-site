@@ -49,6 +49,13 @@
   gap: 16px;
 }
 
+.two-column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+    
     .day-card, .info-card {
       background: white;
       padding: 20px;
@@ -291,58 +298,61 @@
 
       </div>
     </section>
-<section style="margin-top: 30px;">
-  
-  <h2>Software</h2>
-  <div class="info-card">
+<div class="two-column-grid">
 
-    <p>You need to have installed the following on your laptop, in this order:</p>
-    <ol>
-      <li><a href="https://cran.r-project.org/" target="_blank">R</a></li>
-      <li><a href="https://posit.co/downloads/" target="_blank">RStudio</a></li>
-    </ol>
+  <section>
+    <h2>Software</h2>
+    <div class="info-card">
 
-    <h3>R packages</h3>
-    <p>
-      In this course, we use a wide range of R packages. It is highly recommended
-      that you have administrator rights on your laptop, because this will allow
-      you to install these packages when needed.
-    </p>
-    <p>
-      Otherwise, you should install these packages before the start of the course.
-    </p>
-    <p>You can install them with the following code:</p>
+      <p>You need to have installed the following on your laptop, in this order:</p>
+      <ol>
+        <li><a href="https://cran.r-project.org/" target="_blank">R</a></li>
+        <li><a href="https://posit.co/downloads/" target="_blank">RStudio</a></li>
+      </ol>
 
-    <pre><code>pkgs <- c("tidyverse","knitr","rmarkdown","patchwork","palmerpenguins","caret","ISLR",
+      <h3>R packages</h3>
+      <p>
+        In this course, we use a wide range of R packages. It is highly recommended
+        that you have administrator rights on your laptop, because this will allow
+        you to install these packages when needed.
+      </p>
+      <p>
+        Otherwise, you should install these packages before the start of the course.
+      </p>
+      <p>You can install them with the following code:</p>
+
+      <pre><code>pkgs <- c("tidyverse","knitr","rmarkdown","patchwork","palmerpenguins","caret","ISLR",
           "glmnet","randomForest","xgboost","e1071","kernlab","pROC","psych",
           "tidytext","factoextra","neuralnet")
 
 to_install <- setdiff(pkgs, rownames(installed.packages()))
 if (length(to_install)) install.packages(to_install, repos = "https://cloud.r-project.org")</code></pre>
 
-    <p>
-      If you do not have administrator rights and were not able to install the
-      necessary software or packages, you can:
-    </p>
-    <ul>
-      <li>work with RStudio via MyWorkPlace using your Utrecht University account</li>
-      <li>install <a href="https://www.citrix.com/downloads/workspace-app/" target="_blank">Citrix Workspace</a> to access MyWorkPlace</li>
-    </ul>
-  </div>
-<section style="margin-top: 30px;">
-    
-    <section>
-      <h2>Practical Information</h2>
-      <div class="info-card">
-        <ul>
-          <li>Coordinator: Mahdi Shafiee Kamalabad</li>
-          <li>Teachers: Mahdi Shafiee Kamalabad and Thom Volker</li>
-          <li>Location: <a href="https://www.uu.nl/en/minnaert-building">Room 2.07, Minnaert Building, Utrecht University</a></li>     
-          <li>Dates: 20–24 July 2026</li>
-          <li>Contact: m.shafieekamalabad@uu.nl</li>
-        </ul>
-      </div>
-    </section>
+      <p>
+        If you do not have administrator rights and were not able to install the
+        necessary software or packages, you can:
+      </p>
+      <ul>
+        <li>work with RStudio via MyWorkPlace using your Utrecht University account</li>
+        <li>install <a href="https://www.citrix.com/downloads/workspace-app/" target="_blank">Citrix Workspace</a> to access MyWorkPlace</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Practical Information</h2>
+    <div class="info-card">
+      <ul>
+        <li>Coordinator: Mahdi Shafiee Kamalabad</li>
+        <li>Teachers: Mahdi Shafiee Kamalabad and Thom Volker</li>
+        <li>Location: <a href="https://www.uu.nl/en/minnaert-building" target="_blank">Room 2.07, Minnaert Building, Utrecht University</a></li>
+        <li>Dates: 20–24 July 2026</li>
+        <li>Contact: <a href="mailto:m.shafieekamalabad@uu.nl">m.shafieekamalabad@uu.nl</a></li>
+      </ul>
+    </div>
+  </section>
+
+</div>
 
     <footer>
       Built with a simple index.html file on GitHub Pages.
